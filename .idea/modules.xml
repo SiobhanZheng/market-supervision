@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/market-supervision.iml" filepath="$PROJECT_DIR$/market-supervision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supervision-client/supervision-client.iml" filepath="$PROJECT_DIR$/supervision-client/supervision-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supervision-entity/supervision-entity.iml" filepath="$PROJECT_DIR$/supervision-entity/supervision-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supervision-parent/supervision-parent.iml" filepath="$PROJECT_DIR$/supervision-parent/supervision-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supervision-repository/supervision-repository.iml" filepath="$PROJECT_DIR$/supervision-repository/supervision-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/supervision-service/supervision-service.iml" filepath="$PROJECT_DIR$/supervision-service/supervision-service.iml" />
+    </modules>
+  </component>
+</project>

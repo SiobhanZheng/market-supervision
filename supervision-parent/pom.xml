@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.siobhan</groupId>
+	<artifactId>supervision-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<!--自定义maven属性-->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<supervision.version>1.0-SNAPSHOT</supervision.version>
+	</properties>
+
+	<!--应用版本统一管理-->
+	<dependencyManagement>
+		<dependencies>
+			<!--supervision start-->
+			<dependency>
+				<groupId>com.siobhan</groupId>
+				<artifactId>supervision-client</artifactId>
+				<version>${supervision.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.siobhan</groupId>
+				<artifactId>supervision-service</artifactId>
+				<version>${supervision.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.siobhan</groupId>
+				<artifactId>supervision-repository</artifactId>
+				<version>${supervision.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.siobhan</groupId>
+				<artifactId>supervision-entity</artifactId>
+				<version>${supervision.version}</version>
+			</dependency>
+			<!--supervision end-->
+		</dependencies>
+	</dependencyManagement>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<spring.profiles.active>dev</spring.profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+</project>
