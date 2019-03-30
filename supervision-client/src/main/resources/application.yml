@@ -1,8 +1,8 @@
 spring:
   datasource:
-      url: jdbc:mysql://120.79.18.217:3306/supervision?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-      username: root
-      password: siobhan
+      url: jdbc:mysql://{IP}:3306/supervision?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+      username: xxx
+      password: xxx
       driverClassName: com.mysql.jdbc.Driver
   jpa:
       database: MYSQL
